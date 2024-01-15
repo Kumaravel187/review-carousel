@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set character set and viewport for better rendering on various devices -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Include Font Awesome stylesheet with integrity check for security -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Include Inter font styles -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!-- Set the title of the HTML document -->
+    <title>Kumaravel review-carousel</title>
+  </head>
+
+  <body>
+    <!-- Main content wrapper -->
+    <main class="main">
+      <!-- Section for individual review card -->
+      <section class="section-card">
+        <!-- Image of the person -->
+        <img class="img" src="./images/sarah.jpg" alt="sarah" />
+
+        <!-- Name and occupation of the person -->
+        <h5 class="name">
+          sarah
+          <span class="occupation">doctor</span>
+        </h5>
+
+        <!-- Introduction paragraph (currently empty) -->
+        <p class="intro"></p>
+
+        <!-- Container for left and right navigation buttons -->
+        <div class="container">
+          <i id="leftBtn" class="fa-solid fa-left-long"></i>
+          <i id="rightBtn" class="fa-solid fa-right-long"></i>
+        </div>
+
+        <!-- Button for randomizing content -->
+        <button id="randomBtn" class="btn">randomise me</button>
+      </section>
+    </main>
+
+    <!-- JavaScript module for dynamic functionality -->
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

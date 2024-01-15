@@ -1,0 +1,159 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+  list-style-type: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: #eef2f8;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Styles for the main content wrapper */
+.main {
+  min-height: 100vh;
+  min-height: 100dvh; /* Note: This property seems to have a typo; consider removing it or correcting it */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Styles for the individual review card section */
+}
+.main .section-card {
+  padding: 1.25em 2em 1em 2em;
+  border-radius: 0.75em;
+  text-align: center;
+  width: 34em;
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 20px 18px 25px 7px rgba(224, 255, 255, 0.6);
+  gap: 0.25em;
+  /* Styles for the person's image */
+  /* Styles for the person's name and occupation */
+  /* Styles for the introduction paragraph */
+  /* Styles for the container holding navigation buttons */
+  /* Styles for the 'randomize' button */
+}
+.main .section-card .img {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  border: 0.5em solid #e0ffff;
+  background-color: white;
+  padding: 1em;
+}
+.main .section-card .name {
+  font-size: 1.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #000;
+  font-weight: 500;
+  /* Styles for the occupation span within the name */
+}
+.main .section-card .name .occupation {
+  font-size: 0.7em;
+  display: block;
+  color: darkgray;
+  margin-bottom: -1.15em;
+  font-weight: 300;
+}
+.main .section-card .intro {
+  text-align: justify;
+  margin-bottom: 0.75em;
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
+}
+.main .section-card .container {
+  /* Styles for the navigation button icons */
+}
+.main .section-card .container i {
+  font-size: 2.85em;
+  color: black;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  /* Styles for the first navigation button */
+  /* Styles for the second navigation button */
+  /* Hover styles for navigation buttons */
+}
+.main .section-card .container i:nth-child(1) {
+  margin-right: 0.25em;
+}
+.main .section-card .container i:nth-child(2) {
+  margin-left: 0.25em;
+}
+.main .section-card .container i:hover {
+  color: lightcyan;
+}
+.main .section-card .btn {
+  border: none;
+  padding: 0.3em 0;
+  width: 80%;
+  border-radius: 0.5em;
+  font-size: 1.25em;
+  margin-top: 0.5em;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  /* Hover styles for the 'randomize' button */
+}
+.main .section-card .btn:hover {
+  background-color: lightcyan;
+  color: black;
+}/*# sourceMappingURL=styles.css.map */

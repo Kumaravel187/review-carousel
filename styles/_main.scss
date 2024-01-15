@@ -1,0 +1,106 @@
+/* Styles for the main content wrapper */
+.main {
+  min-height: 100vh;
+  min-height: 100dvh; /* Note: This property seems to have a typo; consider removing it or correcting it */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Styles for the individual review card section */
+  .section-card {
+    padding: 1.25em 2em 1em 2em;
+    border-radius: 0.75em;
+    text-align: center;
+    width: 34em;
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 18px 25px 7px rgb(224, 255, 255, 0.6);
+    gap: 0.25em;
+
+    /* Styles for the person's image */
+    .img {
+      width: 15em;
+      height: 15em;
+      border-radius: 50%;
+      border: 0.5em solid #e0ffff;
+      background-color: white;
+      padding: 1em;
+    }
+
+    /* Styles for the person's name and occupation */
+    .name {
+      font-size: 1.75em;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #000;
+      font-weight: 500;
+
+      /* Styles for the occupation span within the name */
+      .occupation {
+        font-size: 0.7em;
+        display: block;
+        color: darkgray;
+        margin-bottom: -1.15em;
+        font-weight: 300;
+      }
+    }
+
+    /* Styles for the introduction paragraph */
+    .intro {
+      text-align: justify;
+      margin-bottom: 0.75em;
+      font-size: 0.9em;
+      margin-bottom: 1.5em;
+    }
+
+    /* Styles for the container holding navigation buttons */
+    .container {
+      /* Styles for the navigation button icons */
+      i {
+        font-size: 2.85em;
+        color: black;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+
+        /* Styles for the first navigation button */
+        &:nth-child(1) {
+          margin-right: 0.25em;
+        }
+
+        /* Styles for the second navigation button */
+        &:nth-child(2) {
+          margin-left: 0.25em;
+        }
+
+        /* Hover styles for navigation buttons */
+        &:hover {
+          color: darken($color: #e0ffff, $amount: 0%);
+        }
+      }
+    }
+
+    /* Styles for the 'randomize' button */
+    .btn {
+      border: none;
+      padding: 0.3em 0;
+      width: 80%;
+      border-radius: 0.5em;
+      font-size: 1.25em;
+      margin-top: 0.5em;
+      background-color: darken($color: black, $amount: 10%);
+      color: white;
+      text-transform: uppercase;
+      transition: all 300ms ease-in-out;
+      cursor: pointer;
+
+      /* Hover styles for the 'randomize' button */
+      &:hover {
+        background-color: darken($color: #e0ffff, $amount: 0%);
+        color: black;
+      }
+    }
+  }
+}
